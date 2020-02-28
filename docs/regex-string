@@ -1,4 +1,4 @@
-Joint   \d{1}:    ([-| ]\d{1,2}.\d{1,2})
+const regexp = /Joint   \d{1}:    ([-| ]\d{1,2}.\d{1,2})/g;
 
 CURRENT JOINT POSITION:\n' +
     'Joint   1:    -78.72\n' +
