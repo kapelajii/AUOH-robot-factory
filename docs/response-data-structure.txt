@@ -1,0 +1,470 @@
+{
+  status: 200,
+  statusText: 'OK',
+  headers: {
+    server: 'Cowboy',
+    connection: 'close',
+    'x-powered-by': 'Express',
+    'content-type': 'text/html; charset=utf-8',
+    'content-length': '5151',
+    etag: 'W/"141f-lt5BGKzLJBfNDpF9qVr4G414XPQ"',
+    date: 'Fri, 28 Feb 2020 13:26:56 GMT',
+    via: '1.1 vegur'
+  },
+  config: {
+    url: 'https://fanuc-robot-http-server.herokuapp.com/',
+    method: 'get',
+    headers: {
+      Accept: 'application/json, text/plain, */*',
+      'User-Agent': 'axios/0.19.2'
+    },
+    transformRequest: [ [Function: transformRequest] ],
+    transformResponse: [ [Function: transformResponse] ],
+    timeout: 0,
+    adapter: [Function: httpAdapter],
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    validateStatus: [Function: validateStatus],
+    data: undefined
+  },
+  request: ClientRequest {
+    _events: [Object: null prototype] {
+      socket: [Function],
+      abort: [Function],
+      aborted: [Function],
+      error: [Function],
+      timeout: [Function],
+      prefinish: [Function: requestOnPrefinish]
+    },
+    _eventsCount: 6,
+    _maxListeners: undefined,
+    outputData: [],
+    outputSize: 0,
+    writable: true,
+    _last: true,
+    chunkedEncoding: false,
+    shouldKeepAlive: false,
+    useChunkedEncodingByDefault: false,
+    sendDate: false,
+    _removedConnection: false,
+    _removedContLen: false,
+    _removedTE: false,
+    _contentLength: 0,
+    _hasBody: true,
+    _trailer: '',
+    finished: true,
+    _headerSent: true,
+    socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      _SNICallback: null,
+      servername: 'fanuc-robot-http-server.herokuapp.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'fanuc-robot-http-server.herokuapp.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(asyncId)]: 6,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    connection: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      _SNICallback: null,
+      servername: 'fanuc-robot-http-server.herokuapp.com',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 9,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'fanuc-robot-http-server.herokuapp.com',
+      _readableState: [ReadableState],
+      readable: true,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: [TLSWrap],
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: [Circular],
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(asyncId)]: 6,
+      [Symbol(kHandle)]: [TLSWrap],
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(connect-options)]: [Object]
+    },
+    _header: 'GET / HTTP/1.1\r\n' +
+      'Accept: application/json, text/plain, */*\r\n' +
+      'User-Agent: axios/0.19.2\r\n' +
+      'Host: fanuc-robot-http-server.herokuapp.com\r\n' +
+      'Connection: close\r\n' +
+      '\r\n',
+    _onPendingData: [Function: noopPendingOutput],
+    agent: Agent {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      defaultPort: 443,
+      protocol: 'https:',
+      options: [Object],
+      requests: {},
+      sockets: [Object],
+      freeSockets: {},
+      keepAliveMsecs: 1000,
+      keepAlive: false,
+      maxSockets: Infinity,
+      maxFreeSockets: 256,
+      maxCachedSessions: 100,
+      _sessionCache: [Object],
+      [Symbol(kCapture)]: false
+    },
+    socketPath: undefined,
+    method: 'GET',
+    insecureHTTPParser: undefined,
+    path: '/',
+    _ended: true,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      readable: false,
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      headers: [Object],
+      rawHeaders: [Array],
+      trailers: {},
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 200,
+      statusMessage: 'OK',
+      client: [TLSSocket],
+      _consuming: false,
+      _dumped: false,
+      req: [Circular],
+      responseUrl: 'https://fanuc-robot-http-server.herokuapp.com/',
+      redirects: [],
+      [Symbol(kCapture)]: false
+    },
+    aborted: false,
+    timeoutCb: null,
+    upgradeOrConnect: false,
+    parser: null,
+    maxHeadersCount: null,
+    reusedSocket: false,
+    _redirectable: Writable {
+      _writableState: [WritableState],
+      writable: true,
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      _options: [Object],
+      _redirectCount: 0,
+      _redirects: [],
+      _requestBodyLength: 0,
+      _requestBodyBuffers: [],
+      _onNativeResponse: [Function],
+      _currentRequest: [Circular],
+      _currentUrl: 'https://fanuc-robot-http-server.herokuapp.com/',
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false,
+    [Symbol(kNeedDrain)]: false,
+    [Symbol(corked)]: 0,
+    [Symbol(kOutHeaders)]: [Object: null prototype] {
+      accept: [Array],
+      'user-agent': [Array],
+      host: [Array]
+    }
+  },
+  data: '<html>\n' +
+    '<head>\n' +
+    '<meta http-equiv="Cache-Control" content="no-cache">\n' +
+    '<meta http-equiv="Cache-Control" content="no-store">\n' +
+    '<meta http-equiv="Pragma" content="no-cache">\n' +
+    '<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">\n' +
+    '<title> ROBOT (robot) Homepage </title>\n' +
+    '\n' +
+    '\n' +
+    '<script language=javascript>\n' +
+    '<!--\n' +
+    'var openSetupWin = null;\n' +
+    'var openLogWin = null;\n' +
+    'var openRuntimeWin = null;\n' +
+    'var clientSetupObj = null;\n' +
+    '\n' +
+    'function CenterPopup(URL, width, height) {\n' +
+    '  try {\n' +
+    '    if (!clientSetupObj) { //not created yet\n' +
+    '      clientSetupObj = new ActiveXObject("VisionWebControls.VWCClientSetupObject");\n' +
+    '      clientSetupObj.Environment("FANUC_LANG") = "eg";\n' +
+    '    }\n' +
+    '  }\n' +
+    '  catch (err) {\n' +
+    '    //ignore errors\n' +
+    '  }\n' +
+    '  var left = (screen.width-width)/2;\n' +
+    '  if (left < 0) {\n' +
+    '    left = 0;\n' +
+    '  }\n' +
+    '  var top = (screen.height-height)/2;\n' +
+    '  if (top < 0) {\n' +
+    '    top = 0;\n' +
+    '  }\n' +
+    `  var features='"toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=yes, ' +\n` +
+    "      'width=' + width + ', ' +\n" +
+    "      'height=' + height + ', ' +\n" +
+    "      'top=' + top + ', ' + //\n" +
+    `      'left=' + left + '"';\n` +
+    '  var popup = window.open(URL, "_blank", features, false);\n' +
+    '  if (popup == null) {\n' +
+    '    alert("Please enable pop-up windows in Internet Explorer.");\n' +
+    '  }\n' +
+    '  else {\n' +
+    '    popup.focus()\n' +
+    '  }\n' +
+    '  return popup;\n' +
+    '}\n' +
+    '\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    '// Open Vision Setup\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    'function OpenVisionSetup() {\n' +
+    '  try {\n' +
+    '    if (openSetupWin && !openSetupWin.closed) {\n' +
+    '      // already open\n' +
+    '      openSetupWin.focus();\n' +
+    '      return;\n' +
+    '    }\n' +
+    '  } catch (err) {\n' +
+    '  }\n' +
+    '  var mobj = null;\n' +
+    '  try {\n' +
+    '    mobj = new ActiveXObject("VisionWebControls.VWCInfo");\n' +
+    '  } catch (err) {\n' +
+    '    openSetupWin = CenterPopup("/FRH/VISION/VSINST.STM?_page=VSSET.HTM&_vnum=", 1024, 520);\n' +
+    '    return;\n' +
+    '  }\n' +
+    '  openSetupWin = CenterPopup("/FRH/VISION/VSSET.HTM", 1024, 520);\n' +
+    '}\n' +
+    '\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    '// Open Vision Log\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    'function OpenVisionLog() {\n' +
+    '  try {\n' +
+    '    if (openLogWin && !openLogWin.closed) {\n' +
+    '      // already open\n' +
+    '      openLogWin.focus();\n' +
+    '      return;\n' +
+    '    }\n' +
+    '  } catch (err) {\n' +
+    '  }\n' +
+    '  var mobj = null;\n' +
+    '  try {\n' +
+    '    mobj = new ActiveXObject("VisionWebControls.VWCInfo");\n' +
+    '  } catch (err) {\n' +
+    '    openLogWin = CenterPopup("/FRH/VISION/VSINST.STM?_page=VLFRMN.STM&_vnum=", 704, 528);\n' +
+    '    return;\n' +
+    '  }\n' +
+    '  openLogWin = CenterPopup("/FRH/VISION/VLFRMN.STM", 704, 528);\n' +
+    '}\n' +
+    '\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    '// Open Vision Runtime\n' +
+    '////////////////////////////////////////////////////////////////////////////////\n' +
+    'function OpenVisionRuntime() {\n' +
+    '  try {\n' +
+    '    if (openRuntimeWin && !openRuntimeWin.closed) {\n' +
+    '      // already open\n' +
+    '      openRuntimeWin.focus();\n' +
+    '      return;\n' +
+    '    }\n' +
+    '  } catch (err) {\n' +
+    '  }\n' +
+    '  var mobj = null;\n' +
+    '  try {\n' +
+    '    mobj = new ActiveXObject("VisionWebControls.VWCInfo");\n' +
+    '  } catch (err) {\n' +
+    '    openRuntimeWin = CenterPopup("/FRH/VISION/VSINST.STM?_page=VREMAN.STM&_vnum=", 704, 400);\n' +
+    '    return;\n' +
+    '  }\n' +
+    '  openRuntimeWin = CenterPopup("/FRH/VISION/VREMAN.STM", 704, 400);\n' +
+    '}\n' +
+    '//-->\n' +
+    '</script>\n' +
+    '\n' +
+    '\n' +
+    '\n' +
+    '  <!--COLD START ONLY-->\n' +
+    '<!--Jog in Auto Mode -->\n' +
+    '\n' +
+    '\n' +
+    '</head>\n' +
+    '<BODY bgcolor= #FFF9e3>\n' +
+    '\n' +
+    '<table width="100%" border="2">\n' +
+    '  <tr>\n' +
+    '  <td>\n' +
+    '  <table width="100%" bgcolor=#FFFFCC>\n' +
+    '  <tr>\n' +
+    '  <td align=left valign=middle><img src="/frs/rws_left.png"></td>\n' +
+    '  <td align=center valign=middle><strong><font color=#e60000 size=6>\n' +
+    '                WEB SERVER</font><br>\n' +
+    '        <font color=black size=3>\n' +
+    '                Hostname: ROBOT<br>\n' +
+    '                Robot No: E33151<br>\n' +
+    '                File Name: /MD/CURPOS.DG<br>\n' +
+    '                Date:  20/02/11\n' +
+    '                Time: 15:40:34\n' +
+    '        </font></strong></td>\n' +
+    '  <td align=right valign=middle><img src="/frs/rws_rght.png"></td>\n' +
+    '  </tr>\n' +
+    '  </table>\n' +
+    '  </td>\n' +
+    '  </tr>\n' +
+    '</table>\n' +
+    '<PRE>\n' +
+    'F Number: E33151\n' +
+    'VERSION : ArcTool              \n' +
+    '$VERSION: V7.7027      10/06/2010\n' +
+    'DATE:     11-FEB-20 15:40 \n' +
+    '\n' +
+    'CURRENT ROBOT POSITION::\n' +
+    'Group #:  1\n' +
+    ' \n' +
+    'CURRENT JOINT POSITION:\n' +
+    'Joint   1:    -78.72\n' +
+    'Joint   2:    -16.96\n' +
+    'Joint   3:     0.79\n' +
+    'Joint   4:     3.15\n' +
+    'Joint   5:    -38.16\n' +
+    'Joint   6:    -78.72\n' +
+    '\n' +
+    'Frame #:  0  Tool #:  7\n' +
+    'CURRENT USER FRAME POSITION:\n' +
+    'X:    622.47\n' +
+    'Y:    836.54\n' +
+    'Z:    328.94\n' +
+    'W:      8.97\n' +
+    'P:     -3.35\n' +
+    'R:    -87.46\n' +
+    'CFG: N U T, 0, 0, 0\n' +
+    '\n' +
+    'Tool #:  7\n' +
+    'CURRENT WORLD POSITION:\n' +
+    'X:    622.47\n' +
+    'Y:    836.54\n' +
+    'Z:    328.94\n' +
+    'W:      8.97\n' +
+    'P:     -3.35\n' +
+    'R:    -87.46\n' +
+    'CFG: N U T, 0, 0, 0\n' +
+    '\n' +
+    'CURRENT ROBOT POSITION::\n' +
+    'Group #:  2\n' +
+    ' \n' +
+    'CURRENT JOINT POSITION:\n' +
+    'Joint   1:     12.34\n' +
+    '\n' +
+    'Frame #:  0  Tool #:  7\n' +
+    'CURRENT USER FRAME POSITION:\n' +
+    'Cartesian position cannot be calculated\n' +
+    '\n' +
+    'Tool #:  7\n' +
+    'CURRENT WORLD POSITION:\n' +
+    'Cartesian position cannot be calculated\n' +
+    '\n' +
+    'CURRENT ROBOT POSITION::\n' +
+    'Group #:  3\n' +
+    ' \n' +
+    'CURRENT JOINT POSITION:\n' +
+    'Joint   1:      1.70\n' +
+    'Joint   2:    -90.50\n' +
+    '\n' +
+    'Frame #:  0  Tool #:  7\n' +
+    'CURRENT USER FRAME POSITION:\n' +
+    'X:   1120.68\n' +
+    'Y:      -.06\n' +
+    'Z:      -.00\n' +
+    'W:      -.01\n' +
+    'P:      1.70\n' +
+    'R:    -90.50\n' +
+    'CFG: \n' +
+    '\n' +
+    'Tool #:  7\n' +
+    'CURRENT WORLD POSITION:\n' +
+    'X:   1120.68\n' +
+    'Y:      -.06\n' +
+    'Z:      -.00\n' +
+    'W:      -.01\n' +
+    'P:      1.70\n' +
+    'R:    -90.50\n' +
+    'CFG: \n' +
+    '</PRE>\n' +
+    '</BODY>\n' +
+    '</HTML>'
+}

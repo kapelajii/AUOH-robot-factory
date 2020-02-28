@@ -1,0 +1,9 @@
+Joint   \d{1}:    ([-| ]\d{1,2}.\d{1,2})
+
+CURRENT JOINT POSITION:\n' +
+    'Joint   1:    -78.72\n' +
+    'Joint   2:    -16.96\n' +
+    'Joint   3:     0.79\n' +
+    'Joint   4:     3.15\n' +
+    'Joint   5:    -38.16\n' +
+    'Joint   6:    -78.72\n' +
