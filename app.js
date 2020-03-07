@@ -4,6 +4,11 @@
  * @Auhthor Kapelajii2020
  */
 
+// Otetaan MQTT-moduuli käyttöön
+const mqtt = require('mqtt');
+const FANUC_SERVER = 'https://fanuc-robot-http-server.herokuapp.com/'
+const MQTT_SERVER = 'wss://auoh20-mqtt-broker.herokuapp.com';
+
 //Luo ohjelmaan luuppi, joka pyörii ikuisesti
 const main_loop = () => {
   setTimeout(() => {
@@ -11,7 +16,7 @@ const main_loop = () => {
     const start_time_stamp = new Date();
     // haetaan akseliarvot serveriltä 
     const axios = require("axios");
-    axios.get("https://fanuc-robot-http-server.herokuapp.com/").then(res => {
+    axios.get(FANUC_SERVER).then(res => {
     // console.log(res);
 
         // Etsitään regexp avulla Joint   1:    -78.72 vastaava merkkijono kaikille 6 akselille
@@ -39,8 +44,23 @@ const main_loop = () => {
         const delta = time_stamp - start_time_stamp; 
         //toISOString() komennolla saadan ajan formaatti muutettu ISO-standardin mukaiseksi
         console.log(time_stamp.toISOString()+" [ " +joints +" ] "+delta+" ms")
+        
+        // data MQTT-serverille
+        let data = {
+          time : time_stamp.toISOString,
+          joints: joints
+        }
+        // julkaise data MQTT-brokerille 
+        mqtt_client.publish('joints',JSON.stringify(data));      
 });
     main_loop();
   }, 10);
 };
-main_loop();
+
+// muodostetaan yhteys MQTT-brokerille
+const mqtt_client = mqtt.connect(MQTT_SERVER);
+mqtt_client.on('connect', () => {
+  console.log('connected to mqtt broker');
+  main_loop();
+})
+
