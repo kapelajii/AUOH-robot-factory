@@ -1,6 +1,6 @@
 # AUOH-robot-factory
 
-Reads Fanuc industrial robots joint values from webserver
+Reads Fanuc industrial robot axis values from webserver, parsing data 
 and sends them to MQTT-server
 
 ## How to use:
