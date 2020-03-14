@@ -37,7 +37,7 @@ const main_loop = () => {
         
         // create MQTT-data 
         let data = {
-          time : time_stamp_end.toISOString,
+          time : time_stamp_end,
           joints: joints
         }
         // publish data to MQTT-broker
